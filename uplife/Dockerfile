@@ -27,15 +27,15 @@ RUN pip install --no-cache-dir psycopg2-binary
 
 RUN pip install --no-cache-dir -r /tmp/requirements.txt \  
     && rm -rf /tmp/requirements.txt \  
-    && useradd -U phototom_user \  
-    && install -d -m 0755 -o phototom_user -g phototom_user /phototom-api/static
+    && useradd -U uplife_user \  
+    && install -d -m 0755 -o uplife_user -g uplife_user /uplife-api/static
 
 # Section 5- Code and User Setup
-WORKDIR /phototom-api
+WORKDIR /uplife-api
 
-USER phototom_user:phototom_user
+USER uplife_user:uplife_user
 
-COPY --chown=phototom_user:phototom_user . .
+COPY --chown=uplife_user:uplife_user . .
 
 
 EXPOSE 8000
