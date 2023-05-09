@@ -89,8 +89,8 @@ All other dependencies are listed in the `requirements.txt` file and can be inst
 #
 
 ## OAS3 Docs Options
-
 - Go to `<host>:<port>/api/docs/`
+- Access the static schema on [SwaggerHub](https://app.swaggerhub.com/apis-docs/Iah-Uch/uplife-api/0.0.1)
 
 #
 
